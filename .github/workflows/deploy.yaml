@@ -1,9 +1,11 @@
 name: DePloY
+
 on:
   release:
     types: [published]
 env:
   NODE_ENV: DePloY
+
 jobs:
   package:
     runs-on: ${{ matrix.os }}
